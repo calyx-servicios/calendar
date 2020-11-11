@@ -1,0 +1,135 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* calendar_colors
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-11-14 10:59+0000\n"
+"PO-Revision-Date: 2019-11-14 10:59+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: calendar_colors
+#: model:ir.model.fields,field_description:calendar_colors.field_calendar_calendar_name
+#: model:ir.model.fields,field_description:calendar_colors.field_calendar_event_calendar_color
+#: model:ir.model.fields,field_description:calendar_colors.field_calendar_event_calendar_id
+#: model:ir.model.fields,field_description:calendar_colors.field_crm_lead_calendar_id
+#: model:ir.ui.view,arch_db:calendar_colors.calendar_calendar_form_view
+#: model:ir.ui.view,arch_db:calendar_colors.calendar_calendar_tree_view
+#: model:ir.ui.view,arch_db:calendar_colors.view_calendar_event_search_inherit
+msgid "Calendar"
+msgstr "Calendario"
+
+#. module: calendar_colors
+#: model:ir.model.fields,help:calendar_colors.field_calendar_event_calendar_id
+msgid "Calendar of Event"
+msgstr "Calendario de Evento"
+
+#. module: calendar_colors
+#: model:ir.model.fields,help:calendar_colors.field_crm_lead_calendar_id
+msgid "Calendar of Oportunity"
+msgstr "Calendario de Oportunidad"
+
+#. module: calendar_colors
+#: model:ir.actions.act_window,name:calendar_colors.open_view_calendar_calendars
+#: model:ir.ui.menu,name:calendar_colors.menu_calendar_color
+msgid "Calendars"
+msgstr "Calendarios"
+
+#. module: calendar_colors
+#: model:ir.model.fields,field_description:calendar_colors.field_calendar_calendar_color
+msgid "Color"
+msgstr "Color"
+
+#. module: calendar_colors
+#: model:ir.model.fields,field_description:calendar_colors.field_calendar_calendar_create_uid
+#: model:ir.model.fields,field_description:calendar_colors.field_calendar_event_location_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: calendar_colors
+#: model:ir.model.fields,field_description:calendar_colors.field_calendar_calendar_create_date
+#: model:ir.model.fields,field_description:calendar_colors.field_calendar_event_location_create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: calendar_colors
+#: model:ir.model.fields,field_description:calendar_colors.field_calendar_calendar_display_name
+#: model:ir.model.fields,field_description:calendar_colors.field_calendar_event_location_display_name
+msgid "Display Name"
+msgstr "Mostrar Nombre"
+
+#. module: calendar_colors
+#: model:ir.model,name:calendar_colors.model_calendar_event
+msgid "Event"
+msgstr "Evento"
+
+#. module: calendar_colors
+#: model:ir.model.fields,field_description:calendar_colors.field_calendar_calendar_id
+#: model:ir.model.fields,field_description:calendar_colors.field_calendar_event_location_id
+msgid "ID"
+msgstr "ID"
+
+#. module: calendar_colors
+#: model:ir.model.fields,field_description:calendar_colors.field_calendar_calendar___last_update
+#: model:ir.model.fields,field_description:calendar_colors.field_calendar_event_location___last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: calendar_colors
+#: model:ir.model.fields,field_description:calendar_colors.field_calendar_calendar_write_uid
+#: model:ir.model.fields,field_description:calendar_colors.field_calendar_event_location_write_uid
+msgid "Last Updated by"
+msgstr "Última actualización realizada por"
+
+#. module: calendar_colors
+#: model:ir.model.fields,field_description:calendar_colors.field_calendar_calendar_write_date
+#: model:ir.model.fields,field_description:calendar_colors.field_calendar_event_location_write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: calendar_colors
+#: model:ir.model,name:calendar_colors.model_crm_lead
+msgid "Lead/Opportunity"
+msgstr "Iniciativa/Oportunidad"
+
+#. module: calendar_colors
+#: model:ir.model.fields,field_description:calendar_colors.field_calendar_event_location_name
+#: model:ir.model.fields,field_description:calendar_colors.field_crm_lead_location
+#: model:ir.ui.view,arch_db:calendar_colors.view_calendar_event_search_inherit
+msgid "Location"
+msgstr "Ubicación"
+
+#. module: calendar_colors
+#: model:ir.model.fields,help:calendar_colors.field_crm_lead_location
+msgid "Location of Oportunity"
+msgstr "Ubicacion de Oportunidad"
+
+#. module: calendar_colors
+#: model:ir.ui.view,arch_db:calendar_colors.view_calendar_event_calendar_inherit
+msgid "Meetings"
+msgstr "Reuniones"
+
+#. module: calendar_colors
+#. openerp-web
+#: code:addons/calendar_colors/static/src/js/web_calendar_color.js:105
+#, python-format
+msgid "Undefined"
+msgstr "Indefinido"
+
+#. module: calendar_colors
+#: model:ir.model,name:calendar_colors.model_calendar_calendar
+msgid "calendar.calendar"
+msgstr "calendar.calendar"
+
+#. module: calendar_colors
+#: model:ir.model,name:calendar_colors.model_calendar_event_location
+msgid "calendar.event.location"
+msgstr "calendar.event.location"
+

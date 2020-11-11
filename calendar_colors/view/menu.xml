@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+    
+
+     <menuitem action="open_view_calendar_calendars"
+    id="menu_calendar_color"
+    name="Calendars"
+    parent="calendar.mail_menu_calendar"
+    groups="base.group_user"
+    sequence="2"/>
+
+    </data>
+
+
+</openerp>
