@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+ 
+<record id="calendar_calendar_tree_view" model="ir.ui.view">
+    <field name="name">calendar.calendar.tree.view</field>
+    <field name="model">calendar.calendar</field>
+    <field name="type">tree</field>
+    <field name="priority" eval="1"/>
+    <field name="arch" type="xml">
+        <tree string="Calendar">
+            <field name="name"/>
+            <field name="color" />
+        </tree>
+     </field>
+</record>
+
+<record id="calendar_calendar_form_view" model="ir.ui.view">
+    <field name="name">calendar.calendar.form.view</field>
+    <field name="model">calendar.calendar</field>
+    <field name="type">form</field>
+    <field name="priority" eval="1"/>
+    <field name="arch" type="xml">
+        <form string="Calendar">
+        <sheet>
+            <group>
+                        
+                <group col="2">
+                    <field name="name"/>
+                    <field name="color" widget="int_color"/>
+                </group>
+              </group>
+        </sheet>
+        </form>
+     </field>
+</record>
+
+<record model="ir.actions.act_window" id="open_view_calendar_calendars">
+    <field name="name">Calendars</field>
+    <field name="res_model">calendar.calendar</field>
+    <field name="view_type">form</field>
+    <field name="view_mode">tree,form</field>
+    <field name="view_id" ref="calendar_calendar_tree_view"/>
+</record>
+ 
+
+
+
+
+</odoo>

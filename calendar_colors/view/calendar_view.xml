@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data>
+    <record id="view_calendar_event_form_inherit" model="ir.ui.view">
+        <field name="name">calendar.event.form</field>
+        <field name="model">calendar.event</field>
+        
+        <field name="inherit_id" ref="calendar.view_calendar_event_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='location']" position="replace">
+             <field name="location" /> <!-- options="{'no_create_edit': True, 'no_quick_create': True}"/> -->
+            <field name="calendar_id" />
+                    
+            </xpath>
+        </field>
+    </record>
+
+
+    <record id="view_calendar_event_search_inherit" model="ir.ui.view">
+        <field name="name">calendar.event.search</field>
+        <field name="model">calendar.event</field>
+        
+        <field name="inherit_id" ref="calendar.view_calendar_event_search" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='user_id']" position="after">
+             <field name="location" /> 
+            <field name="calendar_id" />
+                    
+            </xpath>
+            <xpath expr="//filter[@name='mymeetings']" position="after">
+            </xpath>
+            <xpath expr="//group" position="inside">
+            <filter string="Location" domain="[]" context="{'group_by':'location'}"/>
+            <filter string="Calendar" domain="[]" context="{'group_by':'calendar_id'}"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_calendar_event_calendar_inherit" model="ir.ui.view">
+        <field name="name">calendar.event.search</field>
+        <field name="model">calendar.event</field>
+        <field name="inherit_id" ref="calendar.view_calendar_event_calendar" />
+        <field name="arch" type="xml">
+            <xpath expr="//calendar" position="replace">
+                <calendar string="Meetings" date_start="start" date_stop="stop" date_delay="duration" all_day="allday"
+                                readonly_form_view_id="%(calendar.view_calendar_event_form_popup)s"
+                                event_open_popup="true"
+                                event_limit="3"
+                                color="calendar_id">
+                                <field name="name"/>
+                                <field name="calendar_id"/>
+                                <field name="location"/>
+                                <field name="partner_ids" write_model="calendar.contacts" write_field="partner_id" avatar_field="image_small"/>
+                                <field name="is_highlighted" invisible="1"/>
+                            </calendar>            
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_calendar_event_form_popup_inherit" model="ir.ui.view">
+        <field name="name">calendar.event.search</field>
+        <field name="model">calendar.event</field>
+        <field name="inherit_id" ref="calendar.view_calendar_event_form_popup" />
+        <field name="arch" type="xml">
+        <xpath expr="//field[@name='location']" position="after">
+            <field name="calendar_id" />
+        
+                    
+            </xpath>
+        </field>
+    </record>
+
+</data>
+</odoo>
